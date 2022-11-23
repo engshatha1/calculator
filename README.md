@@ -8,7 +8,5 @@ Create a calculator project using :HTML and JavaScript ,CSS.
 • Inside the script I created three functions:
 
 1. insertrNum: To make the user enter numbers and operations using the button and they appear on the screen.
-2. 
-3. FinalValue: To show the result of the numbers and heights entered on the screen and I also used a function inside the main function (expression) to do the operation.
-4. 
-5. ClearScreen: To erase what appeared on the screen.
+2. FinalValue: To show the result of the numbers and heights entered on the screen and I also used a function inside the main function (expression) to do the operation.
+3. ClearScreen: To erase what appeared on the screen.
