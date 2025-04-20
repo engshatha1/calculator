@@ -47,7 +47,7 @@ input[type=text] {
 }
 
 /* دعم الجوال */
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     #button1, #button2, #button3 {
         width: 18vw;
         height: 18vw;
