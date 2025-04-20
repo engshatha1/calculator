@@ -1,38 +1,61 @@
 body{
+body {
     background-image: url('https://mqalaty.net/wp-content/uploads/2021/03/%D8%AE%D9%84%D9%81%D9%8A%D8%A7%D8%AA-%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D9%84%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85.jpg');
-    background-size: 100%;
-    margin-left: 350px;
-    margin-top: 10px;
-    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
-#button1,#button2,#button3{
+
+#button1, #button2, #button3 {
     height: 130px;
     width: 170px;
     border: none;
     border-radius: 30px;
     font-weight: bold;
     font-family: cursive;
-    
+    margin: 5px;
 }
-#button1{
+
+#button1 {
     font-size: 50px;
     color: pink;
 }
-#button2{
+
+#button2 {
     font-size: 50px;
     color: pink;
     background-color: #eae6a0;
 }
-#button3{
+
+#button3 {
     font-size: 50px;
     color: pink;
     background-color: #c2e5f2;
 }
-input[type=text]{
+
+input[type=text] {
     height: 100px;
-    width: 700px;
+    width: 90%;
+    max-width: 700px;
     font-size: 70px;
     border-radius: 20px;
     border-color: #83cc9c;
+    margin-bottom: 20px;
+}
 
+/* دعم الجوال */
+@media (max-width: 768px) {
+    #button1, #button2, #button3 {
+        width: 30vw;
+        height: 20vw;
+        font-size: 6vw;
+    }
+
+    input[type=text] {
+        font-size: 8vw;
+        height: 15vw;
+    }
 }
