@@ -51,11 +51,11 @@ input[type=text] {
     #button1, #button2, #button3 {
         width: 18vw;
         height: 18vw;
-        font-size: 16vw;
+        font-size: 14vw;
     }
 
     input[type=text] {
-        font-size: 16vw;
+        font-size: 14vw;
         height: 13vw;
     }
 }
