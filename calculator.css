@@ -49,13 +49,13 @@ input[type=text] {
 /* دعم الجوال */
 @media (max-width: 768px) {
     #button1, #button2, #button3 {
-        width: 22vw;
-        height: 22vw;
-        font-size: 7vw;
+        width: 18vw;
+        height: 18vw;
+        font-size: 5vw;
     }
 
     input[type=text] {
-        font-size: 7vw;
-        height: 14vw;
+        font-size: 5vw;
+        height: 13vw;
     }
 }
