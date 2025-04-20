@@ -1,84 +1,58 @@
+<!DOCTYPE html>
 <html>
-    <head>
-    <title> Calculator</title>
+<head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Calculator.css">
+    <link rel="stylesheet" href="Calculator.css">
     <script type="text/javascript">
-    function insertNum(num) 
-    {
-        document.myform.inputBox.value = document.myform.inputBox.value+num;
-    }
-    function finalValue()
-    {
-       var expression = document.myform.inputBox.value;
-       document.myform.inputBox.value= eval(expression);
-    }
-    function clearScreen()
-    {
-        document.myform.inputBox.value ="";
-    }
+        function insertNum(num) {
+            document.myform.inputBox.value += num;
+        }
+
+        function finalValue() {
+            var expression = document.myform.inputBox.value;
+            try {
+                document.myform.inputBox.value = eval(expression);
+            } catch {
+                document.myform.inputBox.value = "Error";
+            }
+        }
+
+        function clearScreen() {
+            document.myform.inputBox.value = "";
+        }
     </script>
-    </head>
+</head>
 <body>
     <form name="myform">
-        <input type="text" name="inputBox" placeholder="0">
+        <input type="text" name="inputBox" placeholder="0" readonly>
     </form>
+
     <table>
         <tr>
-            <td>
-                <input type="button" id="button1" value="9" onclick="insertNum(9)">
-            </td>
-            <td>
-                <input type="button" id="button1" value="8" onclick="insertNum(8)">
-            </td>
-            <td>
-                <input type="button" id="button1" value="7"onclick="insertNum(7)">
-            </td>
-            <td>
-                <input type="button" id="button2" value="+" onclick="insertNum('+')">
-            </td>
+            <td><input type="button" value="9" onclick="insertNum(9)"></td>
+            <td><input type="button" value="8" onclick="insertNum(8)"></td>
+            <td><input type="button" value="7" onclick="insertNum(7)"></td>
+            <td><input type="button" value="+" onclick="insertNum('+')"></td>
         </tr>
         <tr>
-            <td>
-                <input type="button" id="button1" value="6" onclick="insertNum(6)">
-            </td>
-            <td>
-                <input type="button" id="button1" value="5" onclick="insertNum(5)">
-            </td>
-            <td>
-                <input type="button" id="button1" value="4" onclick="insertNum(4)">
-            </td>
-            <td>
-                <input type="button" id="button2" value="-" onclick="insertNum('-')">
-            </td>
+            <td><input type="button" value="6" onclick="insertNum(6)"></td>
+            <td><input type="button" value="5" onclick="insertNum(5)"></td>
+            <td><input type="button" value="4" onclick="insertNum(4)"></td>
+            <td><input type="button" value="-" onclick="insertNum('-')"></td>
         </tr>
         <tr>
-            <td>
-                <input type="button" id="button1" value="3" onclick="insertNum(3)">
-            </td>
-            <td>
-                <input type="button" id="button1" value="2" onclick="insertNum(2)">
-            </td>
-            <td>
-                <input type="button" id="button1" value="1" onclick="insertNum(1)">
-            </td>
-            <td>
-                <input type="button" id="button2" value="x" onclick="insertNum('*')">
-            </td>
+            <td><input type="button" value="3" onclick="insertNum(3)"></td>
+            <td><input type="button" value="2" onclick="insertNum(2)"></td>
+            <td><input type="button" value="1" onclick="insertNum(1)"></td>
+            <td><input type="button" value="×" onclick="insertNum('*')"></td>
         </tr>
         <tr>
-            <td>
-                <input type="button" id="button1" value="=" onclick="finalValue()">
-            </td>
-            <td>
-                <input type="button" id="button3" value="c" onclick="clearScreen()">
-            </td>
-            <td>
-                <input type="button" id="button1" value="0" onclick="insertNum(0)">
-            </td>
-            <td>
-                <input type="button" id="button2" value="/" onclick="insertNum('/')">
-            </td>
+            <td><input type="button" value="=" onclick="finalValue()"></td>
+            <td><input type="button" value="C" onclick="clearScreen()"></td>
+            <td><input type="button" value="0" onclick="insertNum(0)"></td>
+            <td><input type="button" value="÷" onclick="insertNum('/')"></td>
         </tr>
     </table>
 </body>
