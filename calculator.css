@@ -1,4 +1,4 @@
-body{
+
 body {
     background-image: url('https://mqalaty.net/wp-content/uploads/2021/03/%D8%AE%D9%84%D9%81%D9%8A%D8%A7%D8%AA-%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA-%D9%84%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85.jpg');
     background-size: cover;
@@ -49,13 +49,13 @@ input[type=text] {
 /* دعم الجوال */
 @media (max-width: 768px) {
     #button1, #button2, #button3 {
-        width: 30vw;
-        height: 20vw;
-        font-size: 6vw;
+        width: 22vw;
+        height: 22vw;
+        font-size: 7vw;
     }
 
     input[type=text] {
-        font-size: 8vw;
-        height: 15vw;
+        font-size: 7vw;
+        height: 14vw;
     }
 }
